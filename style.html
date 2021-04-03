@@ -1,0 +1,1600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Style Guide | CIS Blog Theme</title>
+	
+	<link rel="stylesheet" href="fonts/font-awesome.min.css" />
+	<link rel="stylesheet" href="fonts/material-design-iconic-font.min.css" />
+	<link rel="stylesheet" href="fonts/cornell-custom.css" />
+	<link rel="stylesheet" href="fonts/totally-cornered.css" />
+	<link rel="stylesheet" href="css/base.css" />
+	<link rel="stylesheet" href="css/cornell.css" />
+	<link rel="stylesheet" href="css/cwd_utilities.css" />
+	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="css/default.css" />
+	
+	<style type="text/css">
+		#header_image {
+			float: left;
+			width: 100%;
+			height: 34vh;
+			max-height: 204px;
+			clear: both;
+			display: table;
+			position: relative;
+			background: url(images/gates-hall.png) no-repeat 0 0;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover !important;
+		}
+	</style>
+		
+	<!-- Emergency Banner -->
+																	   
+</head>
+	
+<body class="cu-seal cis">
+
+	<!-- Start Cornell Branding -->
+	<header aria-label="Main header" id="cu-header">
+		
+		<div id="skipnav"><a href="#main">Skip to main content</a></div>
+
+		<div class="cu45-helper"></div>
+		
+		<div class="container-fluid cu-brand">
+			
+			<div class="cu-logo">
+				<a id="seal" href="http://www.cornell.edu"><span class="sr-only">Cornell University</span></a>
+				<a id="dept" href="http://cis.cornell.edu/"><span class="sr-only">Cornell Computing and Information Science</span></a>
+				<a href="http://www.cornell.edu" tabindex="-1"><img class="sr-only" src="images/cis-standard-lockup-grey-with-seal.png" alt="Cornell University" width="420"></a>
+			</div>
+			
+			<div class="cu-logo department">
+				<a id="cs" href="http://www.cs.cornell.edu/"><img src="images/simple-department-lockup-cs-orange-grey.png" alt="Computer Science" width="380" height="170"></a>
+			</div>
+			
+			<nav class="dropdown-menu" id="main-navigation" aria-label="Utility Navigation">
+				
+				<a id="mobile-home" href="index.html" tabindex="-1"><span class="sr-only">Home</span></a>
+				
+				<div class="menu-top-menu-container">
+					<ul id="menu-top-menu" class="list-menu links">
+						<li><a href="about.html">About</a></li>
+						<li><a href="courses.html">Courses</a></li>
+						<li><a href="contact_us.html">Contact Us</a></li>
+					</ul>
+				</div>
+				
+			</nav>
+			
+			<div class="buttons">
+				<button class="mobile-button" id="mobile-nav">Main Menu</button>
+			</div>
+			
+			<div class="block-cu-search" id="block-cusearch">
+				
+				<span class="search-icon"></span>
+				
+				<form role="search" action="/" id="cu-search-block-form" accept-charset="UTF-8">
+					<label for="search-input" class="visually-hidden">Enter the terms you wish to search for</label>
+					<input id="search-input" type="text" name="s" value="" size="60" maxlength="128" class="form-text">
+					<div class="form-actions js-form-wrapper form-wrapper" id="edit-actions">
+						<input  name="btnG" type="submit" id="edit-submit" value="Search" class="button js-form-submit form-submit">
+					</div>
+				</form>
+				
+				<span class="cornell-search">
+					<a id="cornell-search-link" href="http://www.cornell.edu/search">Search Cornell.edu</a>
+				</span>
+				
+				<span class="search-close"></span>
+				
+			</div>		
+			
+		</div>
+		
+	</header><!-- End Cornell Branding -->
+
+	<div id="header_image" role="banner"></div><!--  CSS background image in the style tag in the head section of this document -->
+	
+	<div id="main-content" class="band">
+		
+		<main id="main" class="container-fluid aria-target" tabindex="-1">
+
+			<div class="row">
+				
+				<div id="sidebar-top" class="secondary">
+					
+					<nav class="dropdown-menu" id="sidebar-navigation" aria-label="Main Navigation">
+						<div class="menu-main-menu-container">
+							<ul class="menu">
+								<li>
+									<a href="index.html" aria-current="page">Home</a>
+								</li>
+								<li class="parent">
+									<a href="course_page.html"><span>Course Page</span></a>
+									<ul class="sub-menu" style="min-width: 250px;">
+										<li>
+											<a href="course_materials.html">Course Materials</a>
+										</li>
+										<li>
+											<a href="course_syllabus.html">Course Syllabus</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="office_hours.html">Office Hours</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+									
+				</div>
+				
+				<article id="main-article" class="primary">
+										
+					<div class="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#">
+						<a href="index.html" rel="v:url" property="v:title">Home</a> &raquo; 
+						<span class="current">Courses</span>
+					</div>
+					
+					<section>
+						<h1>Styleguide</h1>
+						<p class="intro">This is the <code>.intro</code> style (or <code>.lead</code> in Bootstrap) to give extra impact to an opening sentence or two.</p>
+						<p>Welcome to the <a href="https://it.cornell.edu/custom-web">Custom Development</a> Cornell CSS Framework. Below, you'll find a collection of sample content to demonstrate default layout, styling, and functionality. This same content can be used to test your custom designs, and to provide a reference for content contributors. You'll also find a few tips and guidelines along the way.</p>
+				
+					</section>
+				
+					<section>
+					
+						<h2>Heading Styles</h2>
+					
+						<article class="panel padded fill heavy-left">
+							<!-- <hr class="accent2 extra-heavy fade section-header"> -->
+							<h1>Main Content Page Heading (Heading 1)</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam fermentum lacus, ut sagittis dui porttitor vitae. Fusce id tellus libero. In vitae libero sit amet velit lobortis congue in eu velit.</p>
+							<h2>Primary Section Title (Heading 2)</h2>
+					
+							<h3>Secondary Section Title (Heading 3)</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam fermentum lacus, ut sagittis dui porttitor vitae. Fusce id tellus libero. In vitae libero sit amet velit lobortis congue in eu velit.</p>
+					
+							<h4>Tertiary Section Title (Heading 4)</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam fermentum lacus, ut sagittis dui porttitor vitae. Fusce id tellus libero. In vitae libero sit amet velit lobortis congue in eu velit.</p>
+					
+							<h5>Subsection Title (Heading 5)</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam fermentum lacus, ut sagittis dui porttitor vitae. Fusce id tellus libero. In vitae libero sit amet velit lobortis congue in eu velit.</p>
+					
+							<h6>Subsection Title (Heading 6)</h6>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam fermentum lacus, ut sagittis dui porttitor vitae. Fusce id tellus libero. In vitae libero sit amet velit lobortis congue in eu velit.</p>
+					
+						</article>
+				
+					
+				
+					</section>
+				
+					<section>
+						<h2>Horizontal Rules</h2>
+						<p><strong class="tutorial note">Note:</strong> The latest <a href="http://www.w3.org/TR/html-markup/hr.html">W3C HTML5 Specification</a> changes the semantic definition of the <code>&lt;HR&gt;</code> tag, to represent a "thematic break," rather than a traditional stylistic divider. However, we expect that most content contributors will continue to use them in their traditional way, so the following options are provided:</p>
+					
+						<h6>Default</h6>
+						<hr>
+						<h6>.accent1</h6>
+						<hr class="accent1">
+						<h6>.accent2</h6>
+						<hr class="accent2">
+						<h6>.accent3</h6>
+						<hr class="accent3">
+						<h6>.accent4</h6>
+						<hr class="accent4">
+						<h6>.accent5</h6>
+						<hr class="accent5">
+						<h6>.invisible <small>(no visible line, spacer only)</small></h6>
+						<hr class="invisible">
+						<h6>.dotted</h6>
+						<hr class="dotted">
+						<h6>.dashed</h6>
+						<hr class="dashed">
+						<h6>.double</h6>
+						<hr class="double">
+						<h6>.heavy <small>(can be paired with any accent above except "double")</small></h6>
+						<hr class="accent1 heavy">
+						<h6>.extra-heavy <small>(can be paired with any accent above except "double")</small></h6>
+						<hr class="accent2 extra-heavy">
+						<h6>.fade <small>(can be paired with any style)</small></h6>
+						<hr class="accent2 extra-heavy fade">
+						<h6>.flourish <small>(replace with your own vector logo or seal, default seal requires <a href="http://caniuse.com/#feat=svg">SVG</a> support)</small></h6>
+						<hr class="flourish">
+						<h6>.bigred <small>(requires <a href="http://caniuse.com/#feat=svg">SVG</a> support)</small></h6>
+						<hr class="bigred">
+					
+						<aside>
+							<p><strong class="tutorial tip">Hint:</strong> Add an <code>.inline</code> class to any <code>&lt;HR&gt;</code> to allow it to fit beside floated elements. Add a <code>.section-break</code> class to any <code>&lt;HR&gt;</code> to clear floats and add additional spacing before...</p>
+							<hr class="accent1 section-break">
+							<p>...and after.</p>
+						</aside>
+					
+					</section>
+				
+					<section>
+					
+						<h2>Images, Figures, Asides <small>(<code>&lt;img&gt;</code>, <code>&lt;figure&gt;</code>, <code>&lt;aside&gt;</code>)</small></h2>
+						<figure>
+							<img src="images/photos/graduation.jpg" width="925" height="641" alt="Graduating Seniors at Cornell Commencement 2013">
+							<figcaption>Wrap images in a <code>&lt;figure&gt;</code> tag to give them margined placement between block elements. An optional caption can be added using the <code>&lt;figcaption&gt;</code> tag.</figcaption>
+						</figure>
+						<p>
+							Images may be placed within paragraphs or between them. One or more <code>&lt;img&gt;</code> tags may also be wrapped in a <code>&lt;figure&gt;</code> tag, and optionally accompanied by a <code>&lt;figcaption&gt;</code> tag. The <a href="http://www.w3.org/TR/html-markup/figure.html">W3C HTML5 Specification</a> states that <code>figure</code> content should be self-contained, and able to be moved away from the main flow of the document without affecting the document's meaning. In other words, the <code>figure</code> is directly related to the article, but it is not dependent on a specific placement within the article. It can stand alone.
+						</p>
+						<aside>
+							<p>Contrast this with the <code>&lt;aside&gt;</code> tag, which is related to a specific region of the article. The <code>aside</code> must be placed in proximity to the content which it relates to.</p>
+							</aside>
+						<p>
+							Most images used within an article fit the definition of <code>figure</code> content, especially if a caption is included. However, it may make sense to omit the <code>figure</code> tag in some cases, such as when an image's meaning is directly dependent on nearby text.
+						</p>
+					
+						<h3>Alignment Options</h3>
+						<p>
+							Alignment classes can be applied to <code>&lt;img&gt;</code> or <code>&lt;figure&gt;</code> tags (and potentially other block elements within the main article). They will be sized fluidly, at <strong class="tutorial">up to 40%</strong> of container width. However, <strong class="tutorial">images will only be scaled down, not up</strong>. Small images will not be scaled up if their HTML width (e.g., <code>&lt;img src="bigredbear.gif <strong>width="100"</strong>&gt;</code> is less than 40% of the container. This allows for the use of different images sizes, without blurry upscaling or unnecessary waste of space. However, to take advantage of high-density phone and tablet displays, it is still recommended that small images be twice as large natively as their HTML width (i.e., the <code>bigredbear.gif</code> image above should be 200px natively, to display sharply at 100px).
+						</p>
+						<aside>
+							<figure class="align-left align-mobile" style="width:100px">
+								<img src="images/photos/spotlight200.jpg" width="100" height="100" alt="Stylish Ezra">
+								<figcaption>"I would found an institution..."</figcaption>
+							</figure>
+							<p><strong class="tutorial note">Note:</strong> Since images are not upscaled, a small image with a wide caption may not display correctly. The caption may cause the <code>figure</code> container to be wider than its image, unless the <code>figure</code> is given an explicit width to match the image. Take special care in these cases (or consider using a larger image if suitable).</p>
+							<p>
+								In the adjacent example, the <code>figure</code> container has an explicit width of 100px, to match the HTML size of the photo.
+							</p>
+						</aside>
+						<aside>
+							<strong class="tutorial note">Note:</strong> On small screen sizes, below <strong class="tutorial">480px</strong> wide, images will try to fill the width of their container, regardless of alignment. For this reason, it is recommended that all content images have a native size that is no smaller than 480px. However, this behavior can be overridden using the <code>.align-mobile</code> class, demonstrated below.
+						</aside>
+					
+						<h4>Align Left <small><code>.align-left</code></small></h4>
+						<a href="http://blogs.cornell.edu/pawsandreflect" class="no-deco">
+							<figure class="align-left">
+								<img src="images/photos/bearhug.jpg" width="1125" height="750" alt="Homecoming Bear Hug!">
+								<figcaption>Free Hugs!</figcaption>
+							</figure>
+						</a>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam fermentum lacus, ut sagittis dui porttitor vitae. Fusce id tellus libero. In vitae libero sit amet velit lobortis congue in eu velit. Mauris venenatis, nisi vitae ultricies semper, leo dolor porta risus, vitae molestie magna sapien iaculis nibh. Etiam facilisis mauris sed arcu tempus vel dapibus dui molestie. Morbi vitae lacus metus, vel porttitor eros. Duis sed consectetur ipsum. Curabitur et velit in ante dignissim scelerisque. Duis non ipsum at mi pharetra consequat. Quisque eu tortor non ipsum laoreet feugiat. Sed blandit volutpat ligula, fermentum aliquet lectus convallis at. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam fermentum lacus, ut sagittis dui porttitor vitae. Fusce id tellus libero. In vitae libero sit amet velit lobortis congue in eu velit. Mauris venenatis, nisi vitae ultricies semper, leo dolor porta risus, vitae molestie magna sapien iaculis nibh. Etiam facilisis mauris sed arcu tempus vel dapibus dui molestie.
+						</p>
+					
+						<h4>Align Right <small><code>.align-right</code></small></h4>
+						<img class="align-right" src="images/photos/vetstudent.jpg" width="1125" height="750" alt="Vet Student with a Feline Associate">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam fermentum lacus, ut sagittis dui porttitor vitae. Fusce id tellus libero. In vitae libero sit amet velit lobortis congue in eu velit. Mauris venenatis, nisi vitae ultricies semper, leo dolor porta risus, vitae molestie magna sapien iaculis nibh. Etiam facilisis mauris sed arcu tempus vel dapibus dui molestie. Morbi vitae lacus metus, vel porttitor eros. Duis sed consectetur ipsum. Curabitur et velit in ante dignissim scelerisque. Duis non ipsum at mi pharetra consequat. Quisque eu tortor non ipsum laoreet feugiat. Sed blandit volutpat ligula, fermentum aliquet lectus convallis at. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam fermentum lacus, ut sagittis dui porttitor vitae. Fusce id tellus libero. In vitae libero sit amet velit lobortis congue in eu velit. Mauris venenatis, nisi vitae ultricies semper, leo dolor porta risus, vitae molestie magna sapien iaculis nibh. Etiam facilisis mauris sed arcu tempus vel dapibus dui molestie.
+						</p>
+					
+						<h4>Maintain Alignment on Mobile <small><code>.align-mobile</code></small></h4>
+						<figure class="align-left align-mobile">
+							<img src="images/photos/plantations_portrait.jpg" width="550" height="750" alt="Cornell Plantations">
+							<figcaption>This tall image will maintain its 40% width and left alignment at all screen sizes.</figcaption>
+						</figure>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam fermentum lacus, ut sagittis dui porttitor vitae. Fusce id tellus libero. In vitae libero sit amet velit lobortis congue in eu velit. Mauris venenatis, nisi vitae ultricies semper, leo dolor porta risus, vitae molestie magna sapien iaculis nibh. Etiam facilisis mauris sed arcu tempus vel dapibus dui molestie. Morbi vitae lacus metus, vel porttitor eros. Duis sed consectetur ipsum. Curabitur et velit in ante dignissim scelerisque. Duis non ipsum at mi pharetra consequat. Quisque eu tortor non ipsum laoreet feugiat. Sed blandit volutpat ligula, fermentum aliquet lectus convallis at. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam fermentum lacus, ut sagittis dui porttitor vitae. Fusce id tellus libero. In vitae libero sit amet velit lobortis congue in eu velit. Mauris venenatis, nisi vitae ultricies semper, leo dolor porta risus, vitae molestie magna sapien iaculis nibh. Etiam facilisis mauris sed arcu tempus vel dapibus dui molestie.
+						</p>
+					
+						<aside class="sidebar">
+							<h5>Aside <code>.sidebar</code></h5>
+							<p><code>Aside</code> content should be related to the nearby flow of information, and placed inside the same container. It is often displayed as a traditional "sidebar" but can also be used for inline annotations or footnotes.</p>
+						</aside>
+					
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam fermentum lacus, ut sagittis dui porttitor vitae. Fusce id tellus libero. In vitae libero sit amet velit lobortis congue in eu velit. Mauris venenatis, nisi vitae ultricies semper, leo dolor porta risus, vitae molestie magna sapien iaculis nibh. Etiam facilisis mauris sed arcu tempus vel dapibus dui molestie. Morbi vitae lacus metus, vel porttitor eros. Duis sed consectetur ipsum. Curabitur et velit in ante dignissim scelerisque. Duis non ipsum at mi pharetra consequat. Quisque eu tortor non ipsum laoreet feugiat. Sed blandit volutpat ligula, fermentum aliquet lectus convallis at.
+						</p>
+						<p>
+							Etiam facilisis mauris sed arcu tempus vel dapibus dui molestie. Morbi vitae lacus metus, vel porttitor eros. Duis sed consectetur ipsum. Curabitur et velit in ante dignissim scelerisque. Duis non ipsum at mi pharetra consequat. Quisque eu tortor non ipsum laoreet feugiat. Sed blandit volutpat ligula, fermentum aliquet lectus convallis at.
+						</p>
+						<aside class="column">
+							<h5>Aside <code>.column</code></h5>
+							<p><code>Aside</code> content should be related to the nearby flow of information, and placed inside the same container. It is often displayed as a traditional "sidebar" but can also be used for inline annotations or footnotes.</p>
+						</aside>
+					
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam fermentum lacus, ut sagittis dui porttitor vitae. Fusce id tellus libero. In vitae libero sit amet velit lobortis congue in eu velit. Mauris venenatis, nisi vitae ultricies semper, leo dolor porta risus, vitae molestie magna sapien iaculis nibh. Etiam facilisis mauris sed arcu tempus vel dapibus dui molestie. Morbi vitae lacus metus, vel porttitor eros. Duis sed consectetur ipsum. Curabitur et velit in ante dignissim scelerisque. Duis non ipsum at mi pharetra consequat. Quisque eu tortor non ipsum laoreet feugiat. Sed blandit volutpat ligula, fermentum aliquet lectus convallis at.
+						</p>
+						
+						<p>
+							Etiam facilisis mauris sed arcu tempus vel dapibus dui molestie. Morbi vitae lacus metus, vel porttitor eros. Duis sed consectetur ipsum. Curabitur et velit in ante dignissim scelerisque. Duis non ipsum at mi pharetra consequat. Quisque eu tortor non ipsum laoreet feugiat. Sed blandit volutpat ligula, fermentum aliquet lectus convallis at.
+						</p>
+					
+						<h3>Multiple Images in One Figure</h3>
+					
+						<p>Use the <code>.two-col</code>, <code>.three-col</code>, or <code>.four-col</code> classes to instruct a <code>&lt;figure&gt;</code> tag to display images side-by-side. Add <code>.margined</code> to include a small margin between them. Take special care not to apply the <code>.marg<strong class="tutorial">ar</strong>ined</code> class by mistake. This would result in an oily mess.</p>
+					
+						<figure class="three-col margined">
+							<img src="images/photos/vet_panel1.jpg" width="480" height="620" alt="Vet Student with a Canine Associate">
+							<img src="images/photos/vet_panel2.jpg" width="480" height="620" alt="Vet Research Tower">
+							<img src="images/photos/vet_panel3.jpg" width="480" height="620" alt="Giraffes!">
+							<figcaption>These images are part of a single <code>&lt;figure&gt;</code>, sharing the same <code>&lt;figcaption&gt;</code>. They are also free of margarine.</figcaption>
+						</figure>
+					
+						<aside>
+							<strong class="tutorial note">Note:</strong> Most columned content will automatically become a single column at mobile sizes. However, sets of images inside a <code>figure</code> will maintain their column layout. The only exception is four-column sets, which will become two rows of two.
+						</aside>
+					
+						<figure class="align-left two-col margined">
+							<img src="images/photos/weill_panel1.jpg" width="480" height="620" alt="Weill Cornell Medical College">
+							<img src="images/photos/weill_panel2.jpg" width="480" height="620" alt="Weill Medical Student">
+							<figcaption>This <code>&lt;figure&gt;</code> is aligned left, so it should probably hold no more than two columns.</figcaption>
+						</figure>
+					
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam fermentum lacus, ut sagittis dui porttitor vitae. Fusce id tellus libero. In vitae libero sit amet velit lobortis congue in eu velit. Mauris venenatis, nisi vitae ultricies semper, leo dolor porta risus, vitae molestie magna sapien iaculis nibh. Etiam facilisis mauris sed arcu tempus vel dapibus dui molestie. Morbi vitae lacus metus, vel porttitor eros. Duis sed consectetur ipsum. Curabitur et velit in ante dignissim scelerisque. Duis non ipsum at mi pharetra consequat. Quisque eu tortor non ipsum laoreet feugiat. Sed blandit volutpat ligula, fermentum aliquet lectus convallis at. Mauris venenatis, nisi vitae ultricies semper, leo dolor porta risus, vitae molestie magna sapien iaculis nibh. Etiam facilisis mauris sed arcu tempus vel dapibus dui molestie.
+						</p>
+					
+					</section>
+				
+					<section>
+						<h2>Cornell.edu Icons</h2>
+						<p>Include <code>fonts/cornell-custom.css</code> to use Cornell.edu's custom icon font:</p>
+						<ul class="list-menu cols-3 border-box-children">
+							<li class="icon icon-arrow-down">.icon-arrow-down</li>
+							<li class="icon icon-arrow-left">.icon-arrow-left</li>
+							<li class="icon icon-arrow-right">.icon-arrow-right</li>
+							<li class="icon icon-arrow-thin-right">.icon-arrow-thin-right</li>
+							<li class="icon icon-arrow-up">.icon-arrow-up</li>
+							<li class="icon icon-check">.icon-check</li>
+							<li class="icon icon-clear-day">.icon-clear-day</li>
+							<li class="icon icon-clear-night">.icon-clear-night</li>
+							<li class="icon icon-clocktower">.icon-clocktower</li>
+							<li class="icon icon-clocktower-bold">.icon-clocktower-bold</li>
+							<li class="icon icon-close">.icon-close</li>
+							<li class="icon icon-email">.icon-email</li>
+							<li class="icon icon-facebook">.icon-facebook</li>
+							<li class="icon icon-fog">.icon-fog</li>
+							<li class="icon icon-info-alert">.icon-info-alert</li>
+							<li class="icon icon-info-heart">.icon-info-heart</li>
+							<li class="icon icon-info-news">.icon-info-news</li>
+							<li class="icon icon-info-pawprint">.icon-info-pawprint</li>
+							<li class="icon icon-instagram">.icon-instagram</li>
+							<li class="icon icon-logo">.icon-logo</li>
+							<li class="icon icon-menu">.icon-menu</li>
+							<li class="icon icon-overcast">.icon-overcast</li>
+							<li class="icon icon-partly-cloudy-day">.icon-partly-cloudy-day</li>
+							<li class="icon icon-partly-cloudy-night">.icon-partly-cloudy-night</li>
+							<li class="icon icon-plus">.icon-plus</li>
+							<li class="icon icon-rain">.icon-rain</li>
+							<li class="icon icon-reset">.icon-reset</li>
+							<li class="icon icon-search">.icon-search</li>
+							<li class="icon icon-search-big">.icon-search-big</li>
+							<li class="icon icon-sleet">.icon-sleet</li>
+							<li class="icon icon-snow">.icon-snow</li>
+							<li class="icon icon-submenu">.icon-submenu</li>
+							<li class="icon icon-thunderstorm">.icon-thunderstorm</li>
+							<li class="icon icon-twitter">.icon-twitter</li>
+							<li class="icon icon-windy">.icon-windy</li>
+							<li class="icon icon-youtube">.icon-youtube</li>
+						</ul>
+					</section>
+				
+					<section>
+						<h2>Inline Styles</h2>
+						<p>
+							There are various ways to highlight or emphasize text within a paragraph. Traditional <code>&lt;strong&gt;</code> and <code>&lt;em&gt;</code> tags can be used for basic <strong>bold</strong> and <em>italic</em> styling. There are also special CSS classes that can be added to these tags, or to <code>&lt;span&gt;</code> tags, to apply a more distinctive appearance. One example used throughout this document is <code>strong.tutorial</code>, which produces bold, green text to draw attention to important terms such as <strong class="tutorial">labels, values, tips, or steps in a process</strong>.
+						</p>
+						<aside>
+							<strong class="tutorial tip">Hint:</strong> The "tutorial" accent color (green by default) is a customizable Sass variable in <code>_cwd-variables.scss</code>.
+						</aside>
+						<h3>Text Highlights</h3>
+						<p>
+							Five basic highlight colors are provided, with the classes <code>.text-highlight-red</code>, <code>.text-highlight-green</code>, <code>.text-highlight-yellow</code>, <code>.text-highlight-blue</code>, and <code>.text-highlight-purple</code>. These classes can be applied to <code>&lt;span&gt;</code> tags, or to an HTML5 newcomer, the <code>&lt;mark&gt;</code> tag. The <mark>default mark tag is bright yellow (or a very dim yellow in Bootstrap)</mark>, while the five highlight colors below are a bit more muted but still easy to pick out from a white background. Lorem ipsum dolor sit amet. <mark class="text-highlight-red">Fusce id tellus libero. In vitae libero sit amet velit</mark> lobortis congue in eu velit. Mauris venenatis, nisi vitae ultricies semper, leo dolor porta risus, vitae molestie magna sapien iaculis nibh. Etiam facilisis mauris sed arcu tempus vel dapibus dui molestie. Morbi vitae <mark class="text-highlight-green">lacus metus, vel porttitor</mark> eros. Duis sed consectetur ipsum. Curabitur et velit in ante dignissim scelerisque. Duis non ipsum at mi pharetra consequat. Quisque eu tortor non ipsum laoreet feugiat. Sed blandit volutpat ligula, <mark class="text-highlight-yellow">dui nec eros varius ac molestie ante malesuada</mark>. Lorem ipsum dolor sit amet, consectetur adipiscing elit. <mark class="text-highlight-blue">Morbi aliquam fermentum lacus, ut sagittis</mark> dui porttitor vitae. Donec congue dui at velit consectetur fermentum. Fusce id tellus libero. Donec <mark class="text-highlight-purple">congue dui at velit consectetur</mark> fermentum.
+						</p>
+						<h3>Blockquote</h3>
+						<p>A <code>blockquote</code> element has traditionally been used to display long quotations (including pull quotes from within the current document). However, the latest <a href="http://www.w3.org/TR/html-markup/blockquote.html">W3C HTML5 Specification</a> refines this definition. The quote should be from <em>another source</em> (typically another web page), and optionally include the address of this source in a <code>&lt;cite&gt;</code> or <code>&lt;footer&gt;</code> tag (or both, as seen in the example below).</p>
+						<h4>Standard Blockquote</h4>
+						<blockquote>
+							<p>The <code>blockquote</code> element represents content that is quoted from another source, optionally with a citation which must be within a <code>footer</code> or <code>cite</code> element, and optionally with in-line changes such as annotations and abbreviations.</p>
+							<p>Content inside a <code>blockquote</code> other than citations and in-line changes must be quoted from another source, whose address, if it has one, may be cited in the cite attribute.</p>
+							<footer><cite><a href="http://www.w3.org/html/wg/drafts/html/master/semantics.html#the-blockquote-element">4.4.4 The blockquote element</a> - W3C Working Group, 2013</cite></footer>
+						</blockquote>
+						<h4>Impact Blockquote</h4>
+						<blockquote class="impact">
+							<p>Some have called Cornell the “first American university.”</p>
+							<!-- <footer><cite><a href="http://www.w3.org/html/wg/drafts/html/master/semantics.html#the-blockquote-element">4.4.4 The blockquote element</a> - W3C Working Group, 2013</cite></footer> -->
+						</blockquote>
+						<h4>Offset Blockquote</h4>
+						<blockquote class="offset">
+							<p>Some have called Cornell the “first American university.”</p>
+							<!-- <footer><cite><a href="http://www.w3.org/html/wg/drafts/html/master/semantics.html#the-blockquote-element">4.4.4 The blockquote element</a> - W3C Working Group, 2013</cite></footer> -->
+						</blockquote>
+						<p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui. Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue. Nullam quis risus eget urna mollis ornare vel eu leo. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Curabitur blandit tempus porttitor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean lacinia bibendum nulla sed consectetur.</p>
+					</section>
+				
+					<section>
+						<h2>Panels and Accent Options</h2>
+						<p>Content can be wrapped in containers to create visual groupings, or to draw attention to special notes or messages. The CSS classes used below can be applied to regular <code>&lt;DIV&gt;</code> tags, or to specialized tags like <code>&lt;ASIDE&gt;</code>, <code>&lt;SECTION&gt;</code>, and possibly others. <strong class="tutorial">Aside</strong> tags should be used when the content fits the <a href="http://www.w3.org/TR/html-markup/aside.html">W3C HTML5 Specification</a> (<code>aside</code> content should be secondary, but related to the nearby flow of information). <strong class="tutorial">Section</strong> tags can be used to wrap information that forms a thematic group (one which would be appropriate in a document outline). See the <a href="http://www.w3.org/TR/html-markup/section.html">W3C HTML5 Specification</a> and <a href="https://www.w3.org/wiki/HTML/Elements/section">W3C Wiki</a> for more information.</p>
+
+						<aside><strong class="tutorial note">Note:</strong> Keep accessibility in mind when deciding to group content with DIVs. The content will only be grouped <em>visually</em>. To a screen-reader, it will appear like any other content in the flow of the document. This may be desirable, if the visual grouping does not communicate essential document structure. However, you could add an <a href="http://www.w3.org/TR/wai-aria/roles">ARIA role</a> to the DIV (e.g., <code>&lt;div class="panel" role="alert" aria-label="User Warning"&gt;</code>) to define its function. Or, if appropriate, use an <code>&lt;ASIDE&gt;</code> or <code>&lt;SECTION&gt;</code> tag to take advantage of their implied roles.</aside>
+		
+						<aside><strong class="tutorial note">Note:</strong> The <code>.panel</code> class name is also used by Bootstrap. The options below should be compatible, but keep an eye out for anything unexpected! These options were not built on Bootstrap's implementation.</aside>
+
+						<h3>Panels</h3>
+
+						<p><strong class="tutorial tip">Hint:</strong> All options below can be mixed and matched.</p>
+
+						<div class="panel">
+							<p>Default (<code>class="panel"</code>)</p>
+						</div>
+						<div class="panel accent-blue-green">
+							<p>Blue-Green (<code>class="panel accent-blue-green"</code>)</p>
+						</div>
+						<div class="panel accent-blue">
+							<p>Blue (<code>class="panel accent-blue"</code>)</p>
+						</div>
+						<div class="panel accent-purple">
+							<p>Purple (<code>class="panel accent-purple"</code>)</p>
+						</div>
+						<div class="panel accent-gold">
+							<p>Gold (<code>class="panel accent-gold"</code>)</p>
+						</div>
+						<div class="panel accent-green">
+							<p>Green (<code>class="panel accent-green"</code>)</p>
+						</div>
+						<div class="panel accent-red">
+							<p>Red (<code>class="panel accent-red"</code>)</p>
+						</div>
+
+
+						<h3>Fill Background</h3>
+
+						<p><strong class="tutorial tip">Hint:</strong> Use the <code>.no-border</code> class to omit the default 1px border.</p>
+
+						<div class="panel fill">
+							<p>Default (<code>class="panel fill"</code>)</p>
+						</div>
+						<div class="panel accent-blue-green fill">
+							<p>Blue-Green (<code>class="panel accent-blue-green fill"</code>)</p>
+						</div>
+						<div class="panel accent-blue fill">
+							<p>Blue (<code>class="panel accent-blue fill"</code>)</p>
+						</div>
+						<div class="panel accent-purple fill">
+							<p>Purple (<code>class="panel accent-purple fill"</code>)</p>
+						</div>
+						<div class="panel accent-gold fill">
+							<p>Gold (<code>class="panel accent-gold fill"</code>)</p>
+						</div>
+						<div class="panel accent-green fill">
+							<p>Green (<code>class="panel accent-green fill"</code>)</p>
+						</div>
+						<div class="panel accent-red fill">
+							<p>Red (<code>class="panel accent-red fill"</code>)</p>
+						</div>
+
+						<h3>Heavy Border (left or top, with or without fills)</h3>
+
+						<div class="panel fill heavy-left">
+							<p>Default (<code>class="panel fill heavy-left"</code>)</p>
+						</div>
+						<div class="panel accent-blue-green heavy-left">
+							<p>Blue-Green (<code>class="panel accent-blue-green heavy-left"</code>)</p>
+						</div>
+						<div class="panel accent-blue fill heavy-left">
+							<p>Blue (<code>class="panel accent-blue fill heavy-left"</code>)</p>
+						</div>
+						<div class="panel accent-purple heavy-top">
+							<p>Purple (<code>class="panel accent-purple heavy-top"</code>)</p>
+						</div>
+						<div class="panel accent-gold fill heavy-top">
+							<p>Gold (<code>class="panel accent-gold fill heavy-top"</code>)</p>
+						</div>
+						<div class="panel accent-green heavy-top">
+							<p>Green (<code>class="panel accent-green heavy-top"</code>)</p>
+						</div>
+						<div class="panel accent-red fill heavy-top">
+							<p>Red (<code>class="panel accent-red fill heavy-top"</code>)</p>
+						</div>
+
+						<h3>Indenting</h3>
+
+						<div class="panel indent1">
+							<p>Indent 1 Step (<code>class="panel indent1"</code>)</p>
+						</div>
+						<div class="panel indent2">
+							<p>Indent 2 Steps (<code>class="panel indent2"</code>)</p>
+						</div>
+						<div class="panel indent3">
+							<p>Indent 3 Steps (<code>class="panel indent3"</code>)</p>
+						</div>
+						<div class="panel indent4">
+							<p>Indent 4 Steps (<code>class="panel indent4"</code>)</p>
+						</div>
+
+					</section>
+				
+					<section>
+						<h2>
+							Lists
+						</h2>
+				
+						<h3>Unordered List</h3>
+						<ul>
+							<li>List Item</li>
+							<li>List Item 
+								<ul>
+									<li>Nested List Item </li>
+									<li>Nested list item ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam fermentum lacus, ut sagittis dui porttitor vitae.</li>
+									<li>Double Nested 
+										<ul>
+											<li>Nested List Item </li>
+											<li>Nested List Item</li>
+										</ul>
+									</li>
+									<li>Nested List Item</li>
+									<li><a href="#">Nested List Item</a></li>
+									<li>Nested List Item</li>
+								</ul>
+							</li>
+							<li>List Item</li>
+							<li>Nested Ordered: 
+								<ol>
+									<li>Nested List Item
+										<ul>
+											<li>Nested Unordered List Item</li>
+											<li>Nested Unordered List Item</li>
+										</ul>
+									</li>
+									<li>Nested List Item</li>
+								</ol>
+							</li>
+							<li>List Item</li>
+						</ul>
+						<!-- NYI
+						<h4>
+							Table of Contents <small>(<code>ul.toc</code>)</small>
+						</h4>
+						<ul class="toc">
+							<li><a href="#">Introduction</a></li>
+							<li><a href="#">Section One Title</a></li>
+							<li><a href="#">Section Two Title</a></li>
+							<li><a href="#">Section Three Title</a></li>
+							<li><a href="#">Section Four Title</a></li>
+						</ul>
+						-->
+						<h3>Ordered Lists</h3>
+						<div class="three-col">
+							<div>
+								<ol>
+									<li>List Item</li>
+									<li>List Item</li>
+									<li>List Item</li>
+								</ol>
+								<ol class="decimal-leading-zero"> <!-- note: this numbering style can only be done with CSS -->
+									<li>List Item</li>
+									<li>List Item</li>
+									<li>List Item</li>
+								</ol>
+							</div>
+							<div>
+								<ol type="a">
+									<li>List Item</li>
+									<li>List Item</li>
+									<li>List Item</li>
+								</ol>
+								<ol type="A">
+									<li>List Item</li>
+									<li>List Item</li>
+									<li>List Item</li>
+								</ol>
+							</div>
+							<div>
+								<ol type="i">
+									<li>List Item</li>
+									<li>List Item</li>
+									<li>List Item</li>
+								</ol>
+								<ol type="I">
+									<li>List Item</li>
+									<li>List Item</li>
+									<li>List Item</li>
+								</ol>
+							</div>
+						</div>
+						
+						<h3>Custom Unordered List</h3>
+						<p>Icon-driven bullets can be used for higher visual impact. The <code>.custom</code> class on its own will only apply to direct children in the list structure, allowing finer control (custom bullets are often best-suited to single-level lists). In a case where you'd like the icons to appear for all nested list items as well, include the <code>.recursive</code> class. It will apply to all Unordered List descendants, but will not apply to any Ordered Lists that are mixed in. By default, Custom Unordered List bullets use a <a href="https://fontawesome.com/v4.7.0/cheatsheet/">FontAwesome</a> caret glyph. A few other out-of-the-box options are also provided below. The <strong>Status</strong> option uses <a href="http://zavoloklom.github.io/material-design-iconic-font/cheatsheet.html">Material Design Iconic</a> glpyhs.</p>
+						<h4>Simple <small>(<code>ul.custom</code>)</small></h4>
+						<ul class="custom">
+							<li>List item ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam fermentum lacus, ut sagittis dui porttitor vitae.</li>
+							<li>List Item</li>
+							<li>Nested Ordered: 
+								<ol>
+									<li>Nested List Item
+										<ul>
+											<li>Nested Unordered List Item</li>
+											<li>Nested Unordered List Item</li>
+										</ul>
+									</li>
+									<li>Nested List Item</li>
+								</ol>
+							</li>
+							<li>List Item</li>
+						</ul>
+						<h4>Recursive <small>(<code>ul.custom.recursive</code>)</small></h4>
+						<ul class="custom recursive">
+							<li>List item ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam fermentum lacus, ut sagittis dui porttitor vitae.</li>
+							<li>List Item</li>
+							<li>Nested Ordered: 
+								<ol>
+									<li>Nested List Item
+										<ul>
+											<li>Nested Unordered List Item</li>
+											<li>Nested Unordered List Item</li>
+										</ul>
+									</li>
+									<li>Nested List Item</li>
+								</ol>
+							</li>
+							<li>List Item</li>
+						</ul>
+						<h4>Chevrons <small>(<code>ul.custom.chevrons</code>)</small></h4>
+						<ul class="custom chevrons">
+							<li>List item ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam fermentum lacus, ut sagittis dui porttitor vitae.</li>
+							<li>List Item</li>
+						</ul>
+						<h4>Success Checkmarks <small>(<code>ul.custom.success</code>)</small></h4>
+						<ul class="custom success">
+							<li>List item ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam fermentum lacus, ut sagittis dui porttitor vitae.</li>
+							<li>List Item</li>
+						</ul>
+						<h4>Failure X's <small>(<code>ul.custom.failure</code>)</small></h4>
+						<ul class="custom failure">
+							<li>List item ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam fermentum lacus, ut sagittis dui porttitor vitae.</li>
+							<li>List Item</li>
+						</ul>
+						<h4>Failure Warnings <small>(<code>ul.custom.warning</code>)</small></h4>
+						<ul class="custom warning">
+							<li>List item ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam fermentum lacus, ut sagittis dui porttitor vitae.</li>
+							<li>List Item</li>
+						</ul>
+						<h4>Notifications <small>(<code>ul.custom.notifications</code>)</small></h4>
+						<ul class="custom notifications">
+							<li>List item ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam fermentum lacus, ut sagittis dui porttitor vitae.</li>
+							<li>List Item</li>
+						</ul>
+						<h4>Status Message <small>(<code>ul.custom.status</code>)</small></h4>
+						<ul class="custom status">
+							<li>List item ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam fermentum lacus, ut sagittis dui porttitor vitae.</li>
+							<li>List Item</li>
+						</ul>
+						<h4 class="low-margin">On/Off <small>(<code>ul.custom.on-off</code>)</small></h4>
+						<p class="smallprint">Use the <code>.on</code> or <code>.off</code> class on <code>&lt;LI&gt;</code> tags to mark each item.</p>
+						<ul class="custom on-off">
+							<li class="on">This item is on/enabled/passed.</li>
+							<li class="off">This item is off/disabled/failed.</li>
+							<li>This one's unknown or not set. Oh no!</li>
+						</ul>
+						<h4 class="low-margin">On/Off as Steps <small>(<code>ul.custom.on-off-steps</code>)</small></h4>
+						<p class="smallprint">Use the <code>.on</code> or <code>.off</code> class on <code>&lt;LI&gt;</code> tags to mark each item.</p>
+						<ul class="custom on-off-steps">
+							<li class="on">This step is complete.</li>
+							<li class="off">This step is not.</li>
+							<li>This one's unknown or not set. Oh no!</li>
+						</ul>
+						<h4 class="low-margin">On/Off as Toggle <small>(<code>ul.custom.on-off-toggle</code>)</small></h4>
+						<p class="smallprint">Use the <code>.on</code> or <code>.off</code> class on <code>&lt;LI&gt;</code> tags to mark each item. Note: These would typically be made into buttons, to provide the expected user experience.</p>
+						<ul class="custom on-off-toggle">
+							<li class="on">This option is enabled.</li>
+							<li class="off">This option is disabled.</li>
+							<li>This one's unknown or not set. Oh no!</li>
+						</ul>
+						<h4>Nerdy List <small>(<code>ul.custom.nerd</code>)</small></h4>
+						<ul class="custom nerd">
+							<li>A nerdy list item.</li>
+							<li>A nerdy list item.</li>
+							<li class="off">Not a nerdy item. (how'd this get in here?)</li>
+							<li>A nerdy item once more. (thank goodness!)</li>
+						</ul>
+						
+						<aside>
+							<p><strong class="tutorial tip">Hint:</strong> Every icon has a different visual weight and line-height. To choose a different glyph and adjust its properties, add and customize any of the following in your project CSS:</p>
+<pre>
+ul.custom > li:before, ul.custom.recursive ul > li:before {
+   content: '\f0da';
+   font-size: inherit;
+   line-height: inherit;
+   color: #000;
+   opacity: 0.5;
+   top: 0;
+   left: 2px;
+}
+</pre>
+						</aside>
+						
+						<h3>Custom Ordered List</h3>
+						<p>Prominent numbered bullets can be used to communicate an emphasized sense of sequence. Custom Ordered Lists follow the same recursion rules as Unordered Lists above. They utilize styled typography and automatic numbering.</p>
+						<h4>Simple <small>(<code>ol.custom</code>)</small></h4>
+						<ol class="custom">
+							<li>List item ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam fermentum lacus, ut sagittis dui porttitor vitae.</li>
+							<li>List Item</li>
+							<li>Nested Unordered: 
+								<ul>
+									<li>Nested List Item
+										<ol>
+											<li>Nested Ordered List Item</li>
+											<li>Nested Ordered List Item</li>
+										</ol>
+									</li>
+									<li>Nested List Item</li>
+								</ul>
+							</li>
+							<li>List Item</li>
+						</ol>
+						<h4>Recursive <small>(<code>ol.custom.recursive</code>)</small></h4>
+						<ol class="custom recursive">
+							<li>List item ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam fermentum lacus, ut sagittis dui porttitor vitae.</li>
+							<li>List Item</li>
+							<li>Nested Unordered: 
+								<ul>
+									<li>Nested List Item
+										<ol>
+											<li>Nested Ordered List Item</li>
+											<li>Nested Ordered List Item</li>
+										</ol>
+									</li>
+									<li>Nested List Item</li>
+								</ul>
+							</li>
+							<li>List Item</li>
+						</ol>
+						<h4>Large <small>(<code>ol.custom.large</code>)</small></h4>
+						<ol class="custom large">
+							<li>List item ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam fermentum lacus, ut sagittis dui porttitor vitae adipiscing elit.</li>
+							<li>List item ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam fermentum lacus, ut sagittis dui porttitor vitae adipiscing elit.</li>
+							<li>List item ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam fermentum lacus, ut sagittis dui porttitor vitae adipiscing elit.</li>
+						</ol>
+						
+						<aside>
+							<p><strong class="tutorial tip">Hint:</strong> Using different fonts and sizes maybe require adjustments to the numbered bullet properties. Be especially wary of fonts that use Oldstyle figures for numbers, which have varying heights and alignments, making them unsuitable (e.g., Freight Text).</p>
+						</aside>
+
+					</section>
+				
+					<section>
+						<h2>Lists as Menus</h2>
+						<p>The <code>.list-menu</code> system quickly removes bullets and adjusts the layout of list items to fit many common use-cases.<!--  This system is also used as the foundation for the <strong>section navigation</strong> appearing in the <strong class="tutorial">Priority Sidebar</strong> above. --></p>
+				
+						<h3>Basic</h3>
+						<h4>List Menu <small>(<code>ul.list-menu</code>)</small></h4>
+						<ul class="list-menu">
+							<li><a href="#">Academics</a></li>
+							<li><a href="#">Admissions</a></li>
+							<li><a href="#">Teaching & Research</a></li>
+							<li><a href="#">News & Events</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+						<h4>Vertical List Menu <small>(<code>ul.list-menu.vertical</code>)</small></h4>
+						<ul class="list-menu vertical">
+							<li><a href="#">Academics</a></li>
+							<li><a href="#">Admissions</a></li>
+							<li><a href="#">Teaching & Research</a></li>
+							<li><a href="#">News & Events</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+				
+						<h3>With Dividers</h3>
+						<h4>List Menu <small>(<code>ul.list-menu.divs</code>)</small></h4>
+						<ul class="list-menu divs">
+							<li><a href="#">Academics</a></li>
+							<li><a href="#">Admissions</a></li>
+							<li><a href="#">Teaching & Research</a></li>
+							<li><a href="#">News & Events</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+						<h4>Vertical List Menu <small>(<code>ul.list-menu.vertical.divs</code>)</small></h4>
+						<ul class="list-menu vertical divs">
+							<li><a href="#">Academics</a></li>
+							<li><a href="#">Admissions</a></li>
+							<li><a href="#">Teaching & Research</a></li>
+							<li><a href="#">News & Events</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+				
+						<h3>With Button Links</h3>
+						<h4>List Menu <small>(<code>ul.list-menu.links</code>)</small></h4>
+						<ul class="list-menu links">
+							<li><a href="#">Academics</a></li>
+							<li><a href="#">Admissions</a></li>
+							<li><a href="#">Teaching & Research</a></li>
+							<li><a href="#">News & Events</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+						<h4>Vertical List Menu <small>(<code>ul.list-menu.vertical.links</code>)</small></h4>
+						<ul class="list-menu vertical links">
+							<li><a href="#">Academics</a></li>
+							<li><a href="#">Admissions</a></li>
+							<li><a href="#">Teaching & Research</a></li>
+							<li><a href="#">News & Events</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+				
+						<aside><strong class="tutorial tip">Hint:</strong> <code>.list-menu</code> classes can be used on either unordered or ordered lists with the same result. Use whichever tag best fits the content semantically.</aside>
+				
+					</section>
+				
+					<section>
+						<h2>Tables</h2>
+						<p>
+							To minimize incompatibility with other table-based functionality, custom styles are only applied to tables which include a <code>.table</code> class. While options are included for borderless tables, a cell border will always be included when printed, since background colors are commonly omitted when printing from a web browser. 
+						</p>
+						<aside><strong class="tutorial note">Note:</strong> Accessible data tables should include <code>&lt;caption&gt;</code> tags and properly identified and scoped headers for columns and rows (e.g., <code>&lt;th scope="col"&gt;</code>). Some styles also expect the scope attribute to be present, and may not work without it.</aside>
+						<h3>CSS Class Options <small><code>TABLE<strong>.class</strong></code></small></h3>
+						<ul class="list-menu vertical">
+							<li><code>.table</code> - <span class="smallprint">The base class needed to activate custom styles. Nothing below will work without it.</span></li>
+							<li><code>.bordered</code> - <span class="smallprint">Activates full bordering on all table cells for a traditional spreadsheet look (mutually exclusive with .flat).</span></li>
+							<li><code>.flat</code> - <span class="smallprint">Removes all borders, relying instead on subtle tinting (mutually exclusive with .bordered).</span></li>
+							<li><code>.striped</code> - <span class="smallprint">Applies an alternating row tint for easier readability. This option can be paired with all other options (bordered, flat, colored, etc).</span></li>
+							<li><code>.colored</code> - <span class="smallprint">Applies a subtle blue color palette with gray row headers. Lookin sharp!</span></li>
+							<li><code>.rainbow</code> - <span class="smallprint">Applies a not-so-subtle multi-color palette in which columns cycle through five colors for easier differentiation. While a bit whimsical in its default appearance, it can provide a model by which the <code>:nth-child</code> configuration is altered to communicate a data relationship by grouping columns together visually (e.g., the first two columns might be blue and have a shared header, the next three are white with simple table data, and the last is yellow differentiating it somehow from the nearby white columns).</span></li>
+							<li><code>.compact</code> - <span class="smallprint">Lessens the font size and padding of table cells, allowing slightly more data to fit the space.</span></li>
+							<li><code>.sectioned</code> - <span class="smallprint">If multiple <code>&lt;tbody&gt;</code> tags are used, this class creates a visual gap between them. The practical use of this is to break a table into sections <em>visually</em> without needing to use multiple tables.</span></li>
+						</ul>
+						<h3>Examples</h3>
+						<table class="table">
+							<caption>Basic Table (<code>.table</code>)</caption>
+							<thead>
+								<tr>
+									<th></th>
+									<th scope="col">Col 1</th>
+									<th scope="col">Col 2</th>
+									<th scope="col">Col 3</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">Row 1</th>
+									<td>R1 C1</td>
+									<td>R1 C2</td>
+									<td>R1 C3</td>
+								</tr>
+								<tr>
+									<th scope="row">Row 2</th>
+									<td>R2 C1</td>
+									<td>R2 C2</td>
+									<td>R2 C3</td>
+								</tr>
+								<tr>
+									<th scope="row">Row 3</th>
+									<td>R3 C1</td>
+									<td>R3 C2</td>
+									<td>R3 C3</td>
+								</tr>
+							</tbody>
+						</table>
+						
+						<table class="table bordered">
+							<caption>Bordered Table (<code>.table.bordered</code>)</caption>
+							<thead>
+								<tr>
+									<th></th>
+									<th scope="col">Col 1</th>
+									<th scope="col">Col 2</th>
+									<th scope="col">Col 3</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">Row 1</th>
+									<td>R1 C1</td>
+									<td>R1 C2</td>
+									<td>R1 C3</td>
+								</tr>
+								<tr>
+									<th scope="row">Row 2</th>
+									<td>R2 C1</td>
+									<td>R2 C2</td>
+									<td>R2 C3</td>
+								</tr>
+								<tr>
+									<th scope="row">Row 3</th>
+									<td>R3 C1</td>
+									<td>R3 C2</td>
+									<td>R3 C3</td>
+								</tr>
+							</tbody>
+						</table>
+						
+						<table class="table flat">
+							<caption>Flat Table (<code>.table.flat</code>)</caption>
+							<thead>
+								<tr>
+									<th></th>
+									<th scope="col">Col 1</th>
+									<th scope="col">Col 2</th>
+									<th scope="col">Col 3</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">Row 1</th>
+									<td>R1 C1</td>
+									<td>R1 C2</td>
+									<td>R1 C3</td>
+								</tr>
+								<tr>
+									<th scope="row">Row 2</th>
+									<td>R2 C1</td>
+									<td>R2 C2</td>
+									<td>R2 C3</td>
+								</tr>
+								<tr>
+									<th scope="row">Row 3</th>
+									<td>R3 C1</td>
+									<td>R3 C2</td>
+									<td>R3 C3</td>
+								</tr>
+							</tbody>
+						</table>
+						
+						<table class="table striped">
+							<caption>Striped Table (<code>.table.striped</code>)</caption>
+							<thead>
+								<tr>
+									<th></th>
+									<th scope="col">Col 1</th>
+									<th scope="col">Col 2</th>
+									<th scope="col">Col 3</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">Row 1</th>
+									<td>R1 C1</td>
+									<td>R1 C2</td>
+									<td>R1 C3</td>
+								</tr>
+								<tr>
+									<th scope="row">Row 2</th>
+									<td>R2 C1</td>
+									<td>R2 C2</td>
+									<td>R2 C3</td>
+								</tr>
+								<tr>
+									<th scope="row">Row 3</th>
+									<td>R3 C1</td>
+									<td>R3 C2</td>
+									<td>R3 C3</td>
+								</tr>
+								<tr>
+									<th scope="row">Row 4</th>
+									<td>R4 C1</td>
+									<td>R4 C2</td>
+									<td>R4 C3</td>
+								</tr>
+								<tr>
+									<th scope="row">Row 5</th>
+									<td>R5 C1</td>
+									<td>R5 C2</td>
+									<td>R5 C3</td>
+								</tr>
+							</tbody>
+						</table>
+						
+						<table class="table flat striped">
+							<caption>Striped Table (<code>.table.flat.striped</code>)</caption>
+							<thead>
+								<tr>
+									<th></th>
+									<th scope="col">Col 1</th>
+									<th scope="col">Col 2</th>
+									<th scope="col">Col 3</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">Row 1</th>
+									<td>R1 C1</td>
+									<td>R1 C2</td>
+									<td>R1 C3</td>
+								</tr>
+								<tr>
+									<th scope="row">Row 2</th>
+									<td>R2 C1</td>
+									<td>R2 C2</td>
+									<td>R2 C3</td>
+								</tr>
+								<tr>
+									<th scope="row">Row 3</th>
+									<td>R3 C1</td>
+									<td>R3 C2</td>
+									<td>R3 C3</td>
+								</tr>
+								<tr>
+									<th scope="row">Row 4</th>
+									<td>R4 C1</td>
+									<td>R4 C2</td>
+									<td>R4 C3</td>
+								</tr>
+								<tr>
+									<th scope="row">Row 5</th>
+									<td>R5 C1</td>
+									<td>R5 C2</td>
+									<td>R5 C3</td>
+								</tr>
+							</tbody>
+						</table>
+						
+						<table class="table striped colored">
+							<caption>Colored Table (<code>.table.striped.colored</code>)</caption>
+							<thead>
+								<tr>
+									<th></th>
+									<th scope="col">Col 1</th>
+									<th scope="col">Col 2</th>
+									<th scope="col">Col 3</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">Row 1</th>
+									<td>R1 C1</td>
+									<td>R1 C2</td>
+									<td>R1 C3</td>
+								</tr>
+								<tr>
+									<th scope="row">Row 2</th>
+									<td>R2 C1</td>
+									<td>R2 C2</td>
+									<td>R2 C3</td>
+								</tr>
+								<tr>
+									<th scope="row">Row 3</th>
+									<td>R3 C1</td>
+									<td>R3 C2</td>
+									<td>R3 C3</td>
+								</tr>
+							</tbody>
+						</table>
+						
+						<table class="table flat striped colored">
+							<caption>Flat + Colored Table (<code>.table.flat.striped.colored</code>)</caption>
+							<thead>
+								<tr>
+									<th></th>
+									<th scope="col">Col 1</th>
+									<th scope="col">Col 2</th>
+									<th scope="col">Col 3</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">Row 1</th>
+									<td>R1 C1</td>
+									<td>R1 C2</td>
+									<td>R1 C3</td>
+								</tr>
+								<tr>
+									<th scope="row">Row 2</th>
+									<td>R2 C1</td>
+									<td>R2 C2</td>
+									<td>R2 C3</td>
+								</tr>
+								<tr>
+									<th scope="row">Row 3</th>
+									<td>R3 C1</td>
+									<td>R3 C2</td>
+									<td>R3 C3</td>
+								</tr>
+							</tbody>
+						</table>
+						
+						<table class="table striped rainbow">
+							<caption>Rainbow Table. Come on, you know it's fun! (<code>.table.striped.rainbow</code>)</caption>
+							<thead>
+								<tr>
+									<th scope="col">Col 1</th>
+									<th scope="col">Col 2</th>
+									<th scope="col">Col 3</th>
+									<th scope="col">Col 4</th>
+									<th scope="col">Col 5</th>
+									<th scope="col">Col 6</th>
+									<th scope="col">Col 7</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>R1 C1</td>
+									<td>R1 C2</td>
+									<td>R1 C3</td>
+									<td>R1 C4</td>
+									<td>R1 C5</td>
+									<td>R1 C6</td>
+									<td>R1 C7</td>
+								</tr>
+								<tr>
+									<td>R2 C1</td>
+									<td>R2 C2</td>
+									<td>R2 C3</td>
+									<td>R2 C4</td>
+									<td>R2 C5</td>
+									<td>R2 C6</td>
+									<td>R2 C7</td>
+								</tr>
+								<tr>
+									<td>R3 C1</td>
+									<td>R3 C2</td>
+									<td>R3 C3</td>
+									<td>R3 C4</td>
+									<td>R3 C5</td>
+									<td>R3 C6</td>
+									<td>R3 C7</td>
+								</tr>
+								<tr>
+									<td>R4 C1</td>
+									<td>R4 C2</td>
+									<td>R4 C3</td>
+									<td>R4 C4</td>
+									<td>R4 C5</td>
+									<td>R4 C6</td>
+									<td>R4 C7</td>
+								</tr>
+								<tr>
+									<td>R5 C1</td>
+									<td>R5 C2</td>
+									<td>R5 C3</td>
+									<td>R5 C4</td>
+									<td>R5 C5</td>
+									<td>R5 C6</td>
+									<td>R5 C7</td>
+								</tr>
+							</tbody>
+						</table>
+						
+						<table class="table flat striped rainbow">
+							<caption>Flat Rainbow Table with Row Headers (<code>.table.flat.striped.rainbow</code>)</caption>
+							<thead>
+								<tr>
+									<th></th>
+									<th scope="col">Col 1</th>
+									<th scope="col">Col 2</th>
+									<th scope="col">Col 3</th>
+									<th scope="col">Col 4</th>
+									<th scope="col">Col 5</th>
+									<th scope="col">Col 6</th>
+									<th scope="col">Col 7</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">Row 1</th>
+									<td>R1 C1</td>
+									<td>R1 C2</td>
+									<td>R1 C3</td>
+									<td>R1 C4</td>
+									<td>R1 C5</td>
+									<td>R1 C6</td>
+									<td>R1 C7</td>
+								</tr>
+								<tr>
+									<th scope="row">Row 2</th>
+									<td>R2 C1</td>
+									<td>R2 C2</td>
+									<td>R2 C3</td>
+									<td>R2 C4</td>
+									<td>R2 C5</td>
+									<td>R2 C6</td>
+									<td>R2 C7</td>
+								</tr>
+								<tr>
+									<th scope="row">Row 3</th>
+									<td>R3 C1</td>
+									<td>R3 C2</td>
+									<td>R3 C3</td>
+									<td>R3 C4</td>
+									<td>R3 C5</td>
+									<td>R3 C6</td>
+									<td>R3 C7</td>
+								</tr>
+								<tr>
+									<th scope="row">Row 4</th>
+									<td>R4 C1</td>
+									<td>R4 C2</td>
+									<td>R4 C3</td>
+									<td>R4 C4</td>
+									<td>R4 C5</td>
+									<td>R4 C6</td>
+									<td>R4 C7</td>
+								</tr>
+								<tr>
+									<th scope="row">Row 5</th>
+									<td>R5 C1</td>
+									<td>R5 C2</td>
+									<td>R5 C3</td>
+									<td>R5 C4</td>
+									<td>R5 C5</td>
+									<td>R5 C6</td>
+									<td>R5 C7</td>
+								</tr>
+							</tbody>
+						</table>
+					
+						<table class="table bordered">
+							<caption>Table with Nested Column and Row Headings</caption>
+							<thead>
+								<tr>
+									<th colspan="2" rowspan="2"></th>
+									<th rowspan="2" scope="col">Col 1</th>
+									<th colspan="2" scope="col" class="text-center">Col 2</th>
+								</tr>
+								<tr>
+									<th scope="col">Col 2a</th>
+									<th scope="col">Col 2b</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th rowspan="2" scope="row">Row 1</th>
+									<th scope="row">Row 1a</th>
+									<td>R1a C1</td>
+									<td>R1a C2a</td>
+									<td>R1a C2b</td>
+								</tr>
+								<tr>
+									<th scope="row">Row 1b</th>
+									<td>R1b C1</td>
+									<td>R1b C2a</td>
+									<td>R1b C2b</td>
+								</tr>
+								<tr>
+									<th colspan="2" scope="row">Row 2</th>
+									<td>R2 C1</td>
+									<td>R2 C2a</td>
+									<td>R2 C2b</td>
+								</tr>
+							</tbody>
+						</table>
+					
+						<table class="table flat striped colored sectioned">
+							<caption>Table with a <code>&lt;thead&gt;</code> and Multiple <code>&lt;tbody&gt;</code> Tags (add <code>.sectioned</code> to activate spacing)</caption>
+							<thead>
+								<tr>
+									<th></th>
+									<th scope="col">Col 1</th>
+									<th scope="col">Col 2</th>
+									<th scope="col">Col 3</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">Row 1</th>
+									<td>R1 C1</td>
+									<td>R1 C2</td>
+									<td>R1 C3</td>
+								</tr>
+								<tr>
+									<th scope="row">Row 2</th>
+									<td>R2 C1</td>
+									<td>R2 C2</td>
+									<td>R2 C3</td>
+								</tr>
+							</tbody>
+							<tbody>
+								<tr>
+									<th scope="row">Row 1</th>
+									<td>R1 C1</td>
+									<td>R1 C2</td>
+									<td>R1 C3</td>
+								</tr>
+								<tr>
+									<th scope="row">Row 2</th>
+									<td>R2 C1</td>
+									<td>R2 C2</td>
+									<td>R2 C3</td>
+								</tr>
+							</tbody>
+							<tbody>
+								<tr>
+									<th scope="row">Row 1</th>
+									<td>R1 C1</td>
+									<td>R1 C2</td>
+									<td>R1 C3</td>
+								</tr>
+								<tr>
+									<th scope="row">Row 2</th>
+									<td>R2 C1</td>
+									<td>R2 C2</td>
+									<td>R2 C3</td>
+								</tr>
+							</tbody>
+						</table>
+				
+					</section>
+				
+					<section>
+						<h2>Columns and Grid System</h2>
+						<p>You can apply a <code>.two-col</code>, <code>.three-col</code>, or <code>.four-col</code> class to most containers, to distribute their direct child nodes evenly in two, three, or four simple columns. This is the easiest way to render columns without the need for special HTML markup. Rows are maintained even when nodes are different heights (as seen in the Four Column example below).</p>
+						<h3>Two Even Columns</h3>
+						<div class="two-col margined">
+							<img src="images/photos/plantations.jpg" width="375" height="250" alt="Cornell Plantations">
+							<img src="images/photos/plantations.jpg" width="375" height="250" alt="Cornell Plantations">
+						</div>
+						<h3>Three Even Columns</h3>
+						<div class="three-col margined">
+							<img src="images/photos/plantations.jpg" width="375" height="250" alt="Cornell Plantations">
+							<img src="images/photos/plantations.jpg" width="375" height="250" alt="Cornell Plantations">
+							<img src="images/photos/plantations.jpg" width="375" height="250" alt="Cornell Plantations">
+						</div>
+						<h3>Four Even Columns</h3>
+						<div class="four-col margined">
+							<img src="images/photos/plantations.jpg" width="375" height="250" alt="Cornell Plantations">
+							<img src="images/photos/plantations.jpg" width="375" height="250" alt="Cornell Plantations">
+							<img src="images/photos/plantations_square.jpg" width="375" height="375" alt="Cornell Plantations">
+							<img src="images/photos/plantations.jpg" width="375" height="250" alt="Cornell Plantations">
+							<img src="images/photos/plantations_square.jpg" width="375" height="375" alt="Cornell Plantations">
+							<img src="images/photos/plantations.jpg" width="375" height="250" alt="Cornell Plantations">
+							<img src="images/photos/plantations_square.jpg" width="375" height="375" alt="Cornell Plantations">
+							<img src="images/photos/plantations.jpg" width="375" height="250" alt="Cornell Plantations">
+						</div>
+						<h3>Two Columns (Padded)</h3>
+						<div class="two-col padded">
+							<div>Lorem ipsum dolor sit amet, amet eu hic, arcu at eros, odio sed vel ante morbi at aenean, eget leo donec turpis ligula. Felis vehicula, lacinia sed mauris, fusce accumsan adipiscing in id proin ullamcorper, enim ac arcu sed amet.</div>
+							<div>Lorem ipsum dolor sit amet, amet eu hic, arcu at eros, odio sed vel ante morbi at aenean, eget leo donec turpis ligula. Felis vehicula, lacinia sed mauris, fusce accumsan adipiscing in id proin ullamcorper, enim ac arcu sed amet.</div>
+						</div>
+					
+						<h3>Flexbox Grid <small>(<code>.flex-grid</code>)</small></h3>		
+						<p>The 12-column flexbox-based grid is also available for use.</p>
+						<h4 class="fade-bw low-margin">Container Classes</h4>
+						<ul class="list-menu vertical">
+							<li><code>.padded</code> - <span class="smallprint">description</span></li>
+							<li><code>.collapse-rows</code> - <span class="smallprint">description</span></li>
+							<li><code>.compact-rows</code> - <span class="smallprint">description</span></li>
+							<li><code>.collapse-cols</code> - <span class="smallprint">description</span></li>
+							
+						</ul>
+						<p>In many of the example below, the <code>.demo</code> class is used only to color-tint nodes for easier viewing and testing, and should be removed once grids are configured.</p>
+						
+						
+						<h4>Basic Column Grids</h4>
+						<div class="flex-grid demo">
+							<div class="flex-3">3/12</div>
+							<div class="flex-9">9/12</div>
+						</div>
+						<div class="flex-grid demo">
+							<div class="flex-2">2/12</div>
+							<div class="flex-8">8/12</div>
+							<div class="flex-2">2/12</div>
+						</div>
+						<div class="flex-grid demo">
+							<div class="flex-1-5">1/5</div>
+							<div class="flex-1-5">1/5</div>
+							<div class="flex-1-5">1/5</div>
+							<div class="flex-1-5">1/5</div>
+							<div class="flex-1-5">1/5</div>
+						</div>
+						<div class="flex-grid demo">
+							<div class="flex-1-8">1/8</div>
+							<div class="flex-1-8">1/8</div>
+							<div class="flex-1-8">1/8</div>
+							<div class="flex-1-8">1/8</div>
+							<div class="flex-1-8">1/8</div>
+							<div class="flex-1-8">1/8</div>
+							<div class="flex-1-8">1/8</div>
+							<div class="flex-1-8">1/8</div>
+						</div>
+						<div class="flex-grid demo">
+							<div class="flex-2">2/12</div>
+							<div class="flex-2">2/12</div>
+							<div class="flex-2">2/12</div>
+							<div class="flex-2">2/12</div>
+							<div class="flex-2">2/12</div>
+							<div class="flex-2">2/12</div>
+							<div class="flex-2">2/12</div>
+							<div class="flex-2">2/12</div>
+							<div class="flex-2">2/12</div>
+							<div class="flex-2">2/12</div>
+							<div class="flex-2">2/12</div>
+							<div class="flex-2">2/12</div>
+						</div>
+						<h4>Nested</h4>
+						<div class="flex-grid demo">
+							<div class="flex-3">3/12</div>
+							<div class="flex-9">
+								<div class="flex-grid demo collapse-rows">
+									<div class="flex-6">6/12 Nested</div>
+									<div class="flex-6">6/12 Nested</div>
+									<div class="flex-12">12/12 Nested</div>
+								</div>
+							</div>
+						</div>
+						
+						<hr class="invisible section-break">
+						<h4>Collapse Rows</h4>
+						<div class="flex-grid demo collapse-rows">
+							<div class="flex-2">
+								<p>.flex-2</p>
+							</div>
+							<div class="flex-7">
+								<p>.flex-7</p>
+							</div>
+							<div class="flex-3">
+								<p>.flex-3</p>
+							</div>
+							<div class="flex-5">
+								<p>.flex-5</p>
+							</div>
+							<div class="flex-1">
+								<p>.flex-1</p>
+							</div>
+							<div class="flex-1">
+								<p>.flex-1</p>
+							</div>
+							<div class="flex-1">
+								<p>.flex-1</p>
+							</div>
+							<div class="flex-4">
+								<p>.flex-4</p>
+							</div>
+						</div>
+						
+						<hr class="invisible section-break">
+						<h4>Collapse Rows and Padded</h4>
+						<div class="flex-grid demo collapse-rows padded">
+							<div class="flex-2">
+								<p>.flex-2</p>
+							</div>
+							<div class="flex-7">
+								<p>.flex-7</p>
+							</div>
+							<div class="flex-3">
+								<p>.flex-3</p>
+							</div>
+							<div class="flex-5">
+								<p>.flex-5</p>
+							</div>
+							<div class="flex-1">
+								<p>.flex-1</p>
+							</div>
+							<div class="flex-1">
+								<p>.flex-1</p>
+							</div>
+							<div class="flex-1">
+								<p>.flex-1</p>
+							</div>
+							<div class="flex-4">
+								<p>.flex-4</p>
+							</div>
+						</div>
+						
+						<hr class="invisible section-break">
+						<h4>Collapse Rows and Columns</h4>
+						<div class="flex-grid demo collapse-rows collapse-cols">
+							<div class="flex-2">
+								<p>.flex-2</p>
+							</div>
+							<div class="flex-7">
+								<p>.flex-7</p>
+							</div>
+							<div class="flex-3">
+								<p>.flex-3</p>
+							</div>
+							<div class="flex-5">
+								<p>.flex-5</p>
+							</div>
+							<div class="flex-1">
+								<p>.flex-1</p>
+							</div>
+							<div class="flex-1">
+								<p>.flex-1</p>
+							</div>
+							<div class="flex-1">
+								<p>.flex-1</p>
+							</div>
+							<div class="flex-4">
+								<p>.flex-4</p>
+							</div>
+						</div>
+						
+						<hr class="invisible section-break">
+						<h4>Grid with <code>&lt;hr&gt;</code> Dividers</h4>
+						<div class="flex-grid">
+							<div class="flex-3">
+								<p>.flex-3</p>
+							</div>
+							<div class="flex-3">
+								<p>.flex-3</p>
+							</div>
+							<div class="flex-3">
+								<p>.flex-3</p>
+							</div>
+							<div class="flex-3">
+								<p>.flex-3</p>
+							</div>
+							<hr>
+							<div class="flex-4">
+								<p>.flex-4</p>
+							</div>
+							<div class="flex-4">
+								<p>.flex-4</p>
+							</div>
+							<div class="flex-4">
+								<p>.flex-4</p>
+							</div>
+						</div>
+						
+						<hr class="invisible section-break">
+						<h4>Grid with Panels</h4>
+						<div class="flex-grid">
+							<div class="flex-3">
+								<div class="panel">.flex-3</div>
+							</div>
+							<div class="flex-3">
+								<div class="panel">.flex-3</div>
+							</div>
+							<div class="flex-3">
+								<div class="panel">.flex-3</div>
+							</div>
+							<div class="flex-3">
+								<div class="panel">.flex-3</div>
+							</div>
+							<div class="flex-3">
+								<div class="panel fill accent-green no-border">.flex-3</div>
+							</div>
+							<div class="flex-3">
+								<div class="panel fill accent-blue-green no-border">.flex-3</div>
+							</div>
+							<div class="flex-3">
+								<div class="panel fill accent-red no-border">.flex-3</div>
+							</div>
+							<div class="flex-3">
+								<div class="panel fill accent-purple no-border">.flex-3</div>
+							</div>
+						</div>						
+				
+					</section>
+										
+				</article>
+				
+			</div>
+
+		</main>
+		
+	</div>
+
+	<footer>
+		<div class="main-footer tint">
+			<div class="container-fluid sidebar-left">
+				<div class="row columns">
+					
+					<div class="primary">
+						<a href="http://cis.cornell.edu/">
+							<img class="sr-only" src="images/cis-mark-no-css.png" alt="Cornell CIS">
+						</a>
+					</div>
+					
+					<div class="secondary">
+						<a href="http://tech.cornell.edu/">
+							<img class="sr-only" src="images/cornell_tech_mark_no_css.png" alt="Cornell Tech">
+						</a>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="sub-footer">
+			<div class="container-fluid">
+				<div class="row">
+					<p class="a11y-help">If you have a disability and are having trouble accessing information on this website or need materials in an alternate format, contact <a href="mailto:web-accessibility@cornell.edu">web-accessibility@cornell.edu</a> for assistance.</p>
+				</div>
+			</div>
+		</div>
+		
+	</footer>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/cwd.js"></script>
+	<script type="text/javascript" src="js/cwd_utilities.js"></script>
+	<script type="text/javascript" src="js/search.js"></script>
+
+</body>
+
+</html>

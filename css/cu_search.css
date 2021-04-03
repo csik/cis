@@ -1,0 +1,103 @@
+header .block-cu-search {
+  position: absolute;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  background-color: white;
+  padding: 3px 0;
+  padding-left: 50px;
+  border-left: 1px solid #DBDBDB;
+  transition: all .4s;
+}
+header .block-cu-search .cornell-search {
+  position: absolute;
+  right: 0;
+  top: -50px;
+  opacity: 0;
+  font-size: 14px;
+  transition: opacity .4s;
+}
+header .block-cu-search .cornell-search a {
+  border-bottom: none;
+  display: inline-block;
+  transition: margin .4s;
+}
+header .block-cu-search .cornell-search a:after {
+  content: "\2192";
+  color: #F39205;
+  font-size: 18px;
+  transition: margin .4s;
+}
+/* line 35, ../sass/base/_mixins.scss */
+header .block-cu-search .cornell-search a:hover:after, header .block-cu-search .cornell-search a:focus:after {
+  margin-left: 2px;
+}
+header .block-cu-search .cornell-search a:after {
+  display: none;
+  padding-left: 5px;
+}
+header .block-cu-search .cornell-search a:hover, header .block-cu-search .cornell-search a:focus {
+  text-decoration: none;
+  margin-right: -2px;
+}
+header .block-cu-search .search-icon,
+header .block-cu-search .search-close {
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  transition: all .4s;
+}
+header .block-cu-search .search-icon {
+  top: 17px;
+  left: 17px;
+  background-image: url("../images/search_black.png");
+}
+header .block-cu-search .search-icon:hover, header .block-cu-search .search-icon:focus {
+  background-image: url("../images/search_orange.png");
+}
+header .block-cu-search .search-close {
+  display: none;
+  right: 0;
+  top: 3px;
+  background-image: url("../images/search_close.png");
+}
+header .block-cu-search input[type=text] {
+  position: fixed;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  max-height: 50px;
+  background-color: #F4F4F4;
+  padding: 12px 10px;
+  border: none;
+  outline: none;
+  transition: top .4s;
+}
+header .block-cu-search .form-actions {
+  display: none;
+}
+@media (min-width: 992px) {
+  header .block-cu-search {
+    right: 0;
+    width: 16px;
+    height: auto;
+    padding-left: 16px;
+    border: none;
+  }
+  header .block-cu-search .search-icon {
+    top: auto;
+    left: 0;
+  }
+  header .block-cu-search input[type=text] {
+    display: block;
+    position: static;
+    background: none;
+    padding: 5px 30px;
+    margin-top: -10px;
+    border-bottom: 1px solid #F39205;
+  }
+}

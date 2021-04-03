@@ -1,0 +1,681 @@
+input[type=submit],
+button,
+.button,
+.logged-in .action-links a,
+.wysiwyg-button a,
+.edit-link a {
+  display: inline-block;
+  background-color: #43C7F4;
+  color: white;
+  font-weight: 700;
+  padding: 13px 45px;
+  border: 1px solid #43C7F4;
+  transition: background-color .4s;
+}
+
+input[type=submit]:hover, input[type=submit]:focus,
+button:hover,
+button:focus,
+.button:hover,
+.logged-in .action-links a:hover,
+.button:focus,
+.logged-in .action-links a:focus,
+.wysiwyg-button a:hover,
+.wysiwyg-button a:focus,
+.edit-link a:hover,
+.edit-link a:focus {
+  color: white;
+  background-color: #0da9de;
+}
+/* line 24, ../sass/base/_forms.scss */
+input[type=submit].disabled,
+button.disabled,
+.button.disabled,
+.logged-in .action-links a.disabled,
+.wysiwyg-button a.disabled,
+.edit-link a.disabled {
+  color: #333333;
+  background-color: white;
+  cursor: default;
+}
+
+
+/* line 52, ../sass/base/_forms.scss */
+input[type=text],
+input[type=number],
+input[type=email],
+input[type=password] {
+  display: inline-block;
+  line-height: 1.62;
+  padding: 13px 14px;
+  border: 1px solid #DBDBDB;
+}
+
+header .block-cu-search {
+  position: absolute;
+  right: 50px;
+  width: 50px;
+  height: 56px;
+  background-color: white;
+  padding: 3px 0;
+  padding-left: 50px;
+  border-left: 1px solid #DBDBDB;
+  transition: none;
+}
+header .block-cu-search.width-transition {
+  transition: width .4s;
+}
+
+header .block-cu-search .cornell-search {
+  position: absolute;
+  right: 0;
+  top: -50px;
+  opacity: 0;
+  font-size: 14px;
+  transition: opacity .4s;
+}
+
+header .block-cu-search .cornell-search a {
+  border-bottom: none;
+  display: inline-block;
+  transition: margin .4s;
+}
+
+header .block-cu-search .cornell-search a:after {
+  content: "\2192";
+  color: #F39205;
+  font-size: 18px;
+  transition: margin .4s;
+}
+
+header .block-cu-search .cornell-search a:hover:after, header .block-cu-search .cornell-search a:focus:after {
+  margin-left: 2px;
+}
+
+header .block-cu-search .cornell-search a:after {
+  display: none;
+  padding-left: 5px;
+}
+
+header .block-cu-search .cornell-search a:hover, header .block-cu-search .cornell-search a:focus {
+  text-decoration: none;
+  margin-right: -2px;
+}
+
+header .block-cu-search .search-icon,
+header .block-cu-search .search-close {
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  transition: none;
+}
+
+header .block-cu-search .search-icon {
+  top: 22px;
+  left: 17px;
+  background-image: url("../images/search_black.png");
+}
+
+header .block-cu-search .search-icon:hover, header .block-cu-search .search-icon:focus {
+  background-image: url("../images/search_orange.png");
+}
+
+header .block-cu-search .search-close {
+  display: none;
+  right: 0;
+  top: 3px;
+  background-image: url("../images/search_close.png");
+}
+
+header .block-cu-search input[type=text] {
+  position: fixed;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  max-height: 50px;
+  background-color: #F4F4F4;
+  padding: 12px 10px;
+  border: none;
+  transition: top .4s;
+}
+
+h3, .h3 {
+    font-size: 23px;
+}
+
+header .block-cu-search .form-actions {
+  display: none;
+}
+#sidebar-top .content-block,
+#sidebar-bottom .content-block {
+    margin: 0 0 0;
+}
+@media (min-width: 991px) {
+
+	header .block-cu-search {
+    right: 15px;
+	top: 108px;
+    width: 16px;
+    height: auto;
+    padding-left: 16px;
+    border: none;
+  }
+
+	header .block-cu-search .search-icon {
+		top: auto;
+		left: 1px;
+		z-index: 9999999;
+	  }
+
+	header .block-cu-search input[type=text] {
+		display: block;
+		position: static;
+		background: none;
+		padding: 5px 30px;
+		margin-top: -10px;
+	}
+	header.search-open .block-cu-search input[type=text] {
+		border-bottom: 1px solid #F39205;
+	}
+	#main-article {
+		width: calc(100% - 350px);
+		float: right;
+	}
+	#sidebar-top {
+		width: 270px;
+		float: left;
+		margin-top: 85px;
+	}
+	.home #sidebar-top {
+		margin-top: 20px;
+	}
+	#sidebar-bottom {
+		width: 270px;
+		float: left;
+		clear: both;
+	}
+}
+
+
+
+.search-open,
+.search-open .menu-name-main-menu > .menu, .scrolled-header .search-open .menu-toggle {
+  margin-top: 50px;
+}
+
+.search-open .block-cu-search {
+  background-color: #F4F4F4;
+}
+
+.search-open .block-cu-search .search-icon {
+  background-image: url("../images/search_orange.png");
+}
+
+.search-open .block-cu-search input[type=text] {
+  top: 0;
+}
+
+
+
+	
+header .menu-toggle {
+	display: none;
+}
+	
+
+
+
+
+
+@media (min-width: 991px) {
+
+  .search-open,
+  .search-open .menu-name-main-menu > .menu,
+  .search-open .menu-toggle {
+    margin-top: 0;
+  }
+
+	.search-open .cu-logo {
+    	-webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+    	opacity: .35;
+  }
+	.search-open nav {
+    	-webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+    	opacity: 0;
+  }
+
+	.search-open .block-cu-search {
+    position: absolute;
+    right: 15px;
+    width: 42%;
+    background-color: white;
+    padding-left: 0;
+    overflow: visible;
+  }
+	
+	.search-open #main-navigation li.current-menu-item > a	{
+		background: none;
+	}
+
+	.search-open .block-cu-search .cornell-search {
+    opacity: 1;
+  }
+
+	.search-open .block-cu-search .cornell-search a:after {
+    display: inline;
+  }
+
+	.search-open .block-cu-search .search-close {
+    display: block;
+  }
+
+	.search-open .block-cu-search input[type=text] {
+		width: 100%;
+	}
+	.dropdown-menu ul ul {
+		background: #F39205;
+	}
+	
+
+}
+
+@media (max-width: 991px) {
+	header .menu-toggle {
+		display: block;
+		position: absolute;
+		right: 0;
+		height: 50px;
+		width: 50px;
+		background: url(../images/menu_toggle.png) no-repeat 16px 18px/20px;
+		border-left: 1px solid #DBDBDB;
+		-webkit-transition: all .4s;
+		-o-transition: all .4s;
+		transition: all .4s;
+	}
+	header #block-cusearch {
+		overflow: visible !important;
+	}
+	header #block-cusearch,
+	header #block-cusearch * {
+		transition: none !important;
+	}
+	header #block-cusearch input[type=text] {
+		transition: top .4s !important;
+		font-size: 15px;
+		
+	}
+	header .block-cu-search .cornell-search {
+		right: -37px;
+		top: -37px;
+		opacity: 1;
+	}
+	header .block-cu-search .cornell-search a {
+		width: 115px;
+		font-size: 13px;
+	}
+	#mobile-nav {
+		background-image: url(../images/menu_toggle.png);
+		background-color: #fff;
+		padding: 0;
+		margin: 0;
+		-webkit-background-size: 20px;
+		width: 50px;
+		height: 56px;
+		-moz-background-size: 20px;
+		-o-background-size: 20px;
+		background-size: 20px;
+	}	
+	#cu-header .container-fluid .buttons {
+		right: 0;
+	}
+	
+	.cis #cu-header {
+		height: 57px;
+	}
+	#slider_container {
+		margin-top: 57px;
+	}
+	header .block-cu-search {
+		top: 0;
+		border-right: 1px solid #DBDBDB;
+	}
+	
+	.cu-seal #cu-header .cu-brand {
+		padding-top: 0;
+	}
+	.cu-seal #cu-header .cu-brand .cu-logo {
+		margin-top: 1px;
+		padding: 6px 0;
+	}
+	.cu-seal #cu-header .cu-brand .cu-logo.department {
+		margin-top: -18px;
+		height: 54px;
+	}
+	.cu-seal #cu-header .cu-brand .cu-logo.department a {
+		width: 135px !important;
+	}
+	.cu-seal #cu-header .cu-brand .cu-logo.department a#sds {
+		width: 165px !important;
+		margin-top: 5px!important;
+	}
+	.cu-seal #cu-header .cu-brand .cu-logo.department a#cis {
+		margin-top: 3px!important;
+	}
+	.cis .cu-logo a:last-child {
+		background: url(../images/cis-standard-lockup-grey-with-seal.png) 0 0 no-repeat;
+		background-size: cover;
+		width: 157px;
+		height: 42px;
+	}
+	.search-open .block-cu-search input[type=text] {
+		top: 47px;
+	}	
+	.cu-logo #seal {
+		width: 37px;
+		height: 43px;
+	}
+	.cu-logo #dept {
+		width: 211px;
+		height: 44px;
+	}
+	
+	body:not(.logged-in) #cu-header {
+		transition: margin-top .4s;
+	}	
+	body:not(.logged-in) #cu-header.search-open {
+		margin-top: 49px;
+	}	
+	body:not(.logged-in) .search-open .block-cu-search input[type=text] {
+		top: 0px;
+	}
+	#main-navigation {
+		right: 0;
+		top: 0;
+		background: #F39205 !important;
+	}
+	#main-navigation .fa {
+		background: #F39205;
+		border-left: 1px solid #fff;
+		color: #fff;
+	}
+	#main-navigation ul {
+		border-top: 1px solid #fff;
+	}
+	#main-navigation li {
+		border-bottom: 1px solid #fff;
+	}
+	#main-navigation ul li ul li {
+		background: #fff!important;
+		border-bottom: 0px solid #fff !important;
+		text-indent: 18px;
+	}
+	#main-navigation ul li a {
+		color: #000;
+	}
+	#main-navigation li.current-menu-item {
+
+	}
+	#main-navigation li.current-menu-item > a {
+		background: none;
+	}
+	#main-navigation li.current-menu-item > a {
+		color: #000;
+	}
+	#main-navigation a:hover, 
+	#main-navigation a:focus {
+		color: #333;
+	}
+	#main-navigation #mobile-home, 
+	#main-navigation #mobile-close, 
+	#main-navigation #mobile-home, 
+	#main-navigation #mobile-close {
+		color: #fff;
+	}
+	#main-navigation #mobile-home:hover, 
+	#main-navigation #mobile-close:hover, 
+	#main-navigation #mobile-home:focus, 
+	#main-navigation #mobile-close:focus {
+		color: #fff;
+	}
+	body > header {
+		position: relative !important;
+	}
+	#main-navigation .open .fa {
+		background: #F39205;
+	}
+	#main-navigation .fa:focus,
+	#main-navigation .fa:hover {
+		background: #F39205;
+	}
+	#main-navigation li.open > a {
+		background: #F39205;
+	}
+	#main-navigation ul ul li:hover > a {
+		background: #fff;
+	}
+	.admin-bar #cu-header {
+		top: 0;
+	}
+	body > footer .main-footer .row.columns > div {
+		width: 100% !important;
+		float: none !important;
+		margin: 40px auto !important;
+		text-align: center;
+	}
+	body > footer .main-footer .row.columns > div.primary {
+		margin-top: 0 !important;
+	}
+	body > footer .main-footer .row.columns > div.tertiary {
+		margin-bottom: 0 !important;
+	}
+	body > footer .tertiary a {
+		float: none !important;
+	}
+	body > footer .main-footer {
+		padding: 65px 0 !important;
+	}
+	#slider_container {
+		height: 35vh !important;
+	}
+	#main-navigation li a {
+		line-height: 2.9em;
+		text-decoration: none !important;
+	}
+	#main-navigation #mobile-close, #main-navigation #mobile-home {
+		color: #444444 !important;
+		line-height: 2em;
+		margin-bottom: -19px;
+		margin-top: 3px;
+		height: 100%;
+	}
+	#main-content #main {
+		padding-top: 0;
+	}
+	#main-content #main #sidebar-top {
+		width: 100%;
+	}
+	#main-content #main #sidebar-top #section-nav {
+		margin-bottom: 0;
+	}
+	#main-content #main #main-article {
+		width: 100%;
+		margin-top: -36px;
+	}
+	body > footer .main-footer {
+		padding: 44px 0 0 !important;
+	}
+	#main-navigation .dropdown-menu a {
+		color: #333 !important;
+		text-decoration: none !important;
+	}
+	#main-navigation ul li:focus > a,
+	#main-navigation ul li:hover > a {
+		background: rgba(128, 128, 128, 0.36) !important;
+	}
+	#main-navigation ul li a:focus,
+	#main-navigation ul li a:hover {
+		text-decoration: none !important;
+		color: #333 !important;
+	}
+	#main-navigation .current_page_ancestor a span:not(.fa),
+	#main-navigation .current-menu-item a span:not(.fa) {
+		text-decoration: none !important;
+		color: #333 !important;
+	}
+	#cu-header .dropdown-menu .current-page-ancestor, 
+	#cu-header .dropdown-menu .current-menu-item {
+		background: rgba(128, 128, 128, 0.36) !important;
+	}
+	#cu-header .dropdown-menu .parent ul li a:focus, 
+	#cu-header .dropdown-menu .parent ul li a:hover {
+		text-decoration: none !important;
+		color: #006FC6 !important;
+		background: none !important;
+	}
+	#cu-header .dropdown-menu .current-page-ancestor > a, 
+	#cu-header .dropdown-menu .current-menu-item > a {
+		color: #000 !important;
+	}
+	#cu-header .dropdown-menu .current-page-ancestor .current-menu-item > a {
+		color: #006FC6 !important;
+		background: #fff !important;
+	}
+	#cu-header .dropdown-menu .current-page-ancestor .current-menu-item > a:focus,
+	#cu-header .dropdown-menu .current-page-ancestor .current-menu-item > a:hover {
+		background: #fff !important;
+	}
+	#main-navigation .dropdown-menu .sub-menu .current-menu-item a {
+		color: #333 !important;
+		text-decoration: none !important;
+	}
+	#main-navigation .fa:before {
+		position: absolute;
+		top: -7px;
+		right: 15px;
+	}
+	#main-navigation .fa {
+		height: 52px;
+		width: 52px;
+	}
+}
+
+@media (max-width: 800px) {
+	#slider_container {
+		height: 30vh !important;
+	}
+}
+@media (max-width: 675px) {
+	#main article aside.sidebar {
+		width: 100%;
+	}
+}
+@media (min-width: 675px) {
+	#main-article .description.aside {
+		float: left;
+		width: calc(100% - 270px);
+	}
+
+}
+@media (max-width: 600px) {
+	.copyright,
+	.loginout,
+	.a11y-help {
+		width: 100%;
+		text-align: center;
+	}
+}
+
+@media (max-width: 525px) {
+	#slider_container .slider-container .campaign-nav {
+		left: 4% !important;
+		width: 92% !important;
+	}
+	#slider_container .slider-container .campaign-nav .next-prev .next {
+		/*position: absolute !important;
+		margin-right: 0 !important;
+		right: 0 !important;*/
+	}
+	#slider_container .slider-caption .the_caption {
+		font-size: 15px;
+		line-height: 19px;
+	}
+}
+
+@media (min-width: 480px) {
+	.archive-thumb-wrap {
+		float: left;
+		margin: 0 0 0 0;
+		max-width: 150px;
+		max-height: 150px;
+	}
+	.single .archive-thumb-wrap,
+	.page-template-default .archive-thumb-wrap {
+		max-width: 250px;
+	}
+	.single .excerpt-wrap,
+	.page-template-default .excerpt-wrap {
+		width: calc(100% - 280px);
+	}
+	.single .excerpt-wrap.no_thumb,
+	.page-template-default .excerpt-wrap.no_thumb {
+		width: 100%;
+	}
+}
+@media (max-width: 480px) {
+	.archive-thumb-wrap {
+		text-align: center;
+		max-width: 96%;
+		float: none !important;
+    	margin: 8px auto 15px !important;
+	}
+	.excerpt-wrap {
+		margin: 0 auto 15px;
+		width: 96%;
+	}
+	article section {
+		padding: 0 0 2em;
+		margin-bottom: 0;
+	}
+	.search-results .archive-thumb-wrap {
+		margin: 0 0 12px 0;
+	}
+	#slider_container {
+		height: 26vh !important;
+	}
+}
+@media (max-width: 400px) {
+	.cis .cu-logo a:last-child {
+		width: 247px;
+		height: 40px;
+	}
+	#mobile-nav {
+		width: 45px;
+		-webkit-background-size: 18px;
+		-moz-background-size: 18px;
+		-o-background-size: 18px;
+		background-size: 18px;
+	}
+	header .block-cu-search {
+		right: 45px;
+		width: 45px;
+	}
+	header .block-cu-search .search-icon {
+		height: 15px;
+		width: 15px;
+	}
+	header .block-cu-search .cornell-search {
+		right: -32px;
+		top: -35px;
+		opacity: 1;
+	}
+}
+@media (max-width: 320px) {
+	#slider_container {
+		height: 19vh !important;
+	}
+}
